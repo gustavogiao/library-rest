@@ -4,7 +4,7 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
-public class BookServer {
+public class MainServer {
     public static void main(String[] args) {
         
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
