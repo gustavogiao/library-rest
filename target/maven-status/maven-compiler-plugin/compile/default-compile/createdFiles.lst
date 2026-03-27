@@ -1,0 +1,5 @@
+com\example\clients\Book\MainClient.class
+com\example\servers\BookServer.class
+com\example\models\Book.class
+com\example\clients\Book\BookClient.class
+com\example\resources\BookResource.class
