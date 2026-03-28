@@ -23,8 +23,8 @@ import jakarta.ws.rs.core.Response;
 @Path("/movies")
 public class MovieResource {
 
-    private static List<Movie> movies = new ArrayList<>();
-    private static Gson gson = new Gson();
+    private final static List<Movie> movies = new ArrayList<>();
+    private final static Gson gson = new Gson();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

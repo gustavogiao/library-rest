@@ -22,8 +22,8 @@ import jakarta.ws.rs.core.Response;
 @Path("/missions")
 public class MissionResource {
 
-    private static List<Mission> missions = new ArrayList<>();
-    private static Gson gson = new Gson();
+    private final static List<Mission> missions = new ArrayList<>();
+    private final static Gson gson = new Gson();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

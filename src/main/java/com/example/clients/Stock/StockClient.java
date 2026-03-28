@@ -9,8 +9,8 @@ import jakarta.ws.rs.core.Response;
 
 public class StockClient {
 
-    private Client client;
-    private WebTarget target;
+    private final Client client;
+    private final WebTarget target;
 
     public StockClient(){
         client = ClientBuilder.newClient();

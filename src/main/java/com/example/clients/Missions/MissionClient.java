@@ -8,8 +8,8 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 public class MissionClient {
-    private Client client;
-    private WebTarget target;
+    private final Client client;
+    private final WebTarget target;
 
     public MissionClient(){
         client = ClientBuilder.newClient();

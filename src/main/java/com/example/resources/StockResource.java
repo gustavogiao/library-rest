@@ -22,8 +22,8 @@ import jakarta.ws.rs.core.Response;
 @Path("/stock")
 public class StockResource {
 
-    private static List<ItemStock> itens = new ArrayList<>();
-    private static Gson gson = new Gson();
+    private static final List<ItemStock> itens = new ArrayList<>();
+    private static final Gson gson = new Gson();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

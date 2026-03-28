@@ -22,8 +22,8 @@ import jakarta.ws.rs.core.Response;
 @Path("/tasks")
 public class TaskResource {
 
-    private static List<Task> tasks = new ArrayList<>();
-    private static Gson gson = new Gson();
+    private static final List<Task> tasks = new ArrayList<>();
+    private static final Gson gson = new Gson();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

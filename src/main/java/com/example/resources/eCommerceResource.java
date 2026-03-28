@@ -20,8 +20,8 @@ import jakarta.ws.rs.core.Response;
 @Path("/products")
 public class eCommerceResource {
 
-    private static List<Product> products = new ArrayList<>();
-    private static Gson gson = new Gson();
+    private static final List<Product> products = new ArrayList<>();
+    private static final Gson gson = new Gson();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
