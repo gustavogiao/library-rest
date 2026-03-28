@@ -40,7 +40,7 @@ public class TaskResource {
     }
 
     @GET
-    @Path("{/id}")
+    @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public String getTask(@PathParam("id") int id) {
         for(Task t : tasks){
@@ -50,7 +50,7 @@ public class TaskResource {
     }
 
     @DELETE
-    @Path("{/id}")
+    @Path("/{id}")
     public Response deleteTask(@PathParam("id") int id) {
         tasks.removeIf(t -> t.id == id);
         return Response.status(Response.Status.NO_CONTENT).build();
